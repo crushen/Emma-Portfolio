@@ -1,13 +1,25 @@
 <template>
   <section class="pages">
     <div class="page">
-      <transition name="slide" mode="out-in">
-        <home v-if="page === '/'" key="home" />
+      <!-- <transition name="slide" mode="out-in"> -->
+      <home
+        v-if="page === '/'"
+        key="home"
+        :page-colour="pageColour"
+      />
 
-        <work v-if="page === '/work'" key="work" />
+      <work
+        v-if="page === '/work'"
+        key="work"
+        :page-colour="pageColour"
+      />
 
-        <contact v-if="page === '/contact'" key="contact" />
-      </transition>
+      <contact
+        v-if="page === '/contact'"
+        key="contact"
+        :page-colour="pageColour"
+      />
+      <!-- </transition> -->
     </div>
   </section>
 </template>
@@ -29,7 +41,17 @@ export default {
     }
   },
   computed: {
-    ...mapState(['page'])
+    ...mapState(['page']),
+    pageColour () {
+      switch (this.page) {
+        case '/work':
+          return '#00A3FF'
+        case '/contact':
+          return '#FF3F15'
+        default:
+          return '#FFE600'
+      }
+    }
   }
 }
 </script>
