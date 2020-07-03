@@ -1,15 +1,23 @@
 <template>
   <nav>
-    <nuxt-link to="/">
-      Home
-    </nuxt-link>
+    <ul>
+      <li>
+        <nuxt-link to="/">
+          Home
+        </nuxt-link>
+      </li>
 
-    <nuxt-link to="/work">
-      Work
-    </nuxt-link>
+      <li>
+        <nuxt-link to="/work">
+          Work
+        </nuxt-link>
+      </li>
 
-    <nuxt-link to="/contact">
-      Contact
-    </nuxt-link>
+      <li>
+        <nuxt-link to="/contact">
+          Contact
+        </nuxt-link>
+      </li>
+    </ul>
   </nav>
 </template>

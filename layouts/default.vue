@@ -14,9 +14,6 @@ export default {
   components: {
     appNav,
     page
-  },
-  mounted () {
-    // window.scrollTo(0, 0)
   }
 }
 </script>
@@ -27,6 +24,9 @@ export default {
   --blue: #00A3FF;
   --red: #FF3F15;
   --dark-grey: #3F3F3F;
+
+  --title-font: 'Bungee', serif;
+  --main-font: 'Bitter', cursive;
 }
 
 html {
@@ -38,6 +38,8 @@ html {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+  font-family: var(--main-font);
+  color: var(--dark-grey);
 }
 
 *,
@@ -47,5 +49,13 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--title-font);
+}
+
+.page-header {
+  padding: 16px;
 }
 </style>
