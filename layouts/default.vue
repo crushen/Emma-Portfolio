@@ -21,6 +21,7 @@ export default {
 <style>
 :root {
   --yellow: #FFE600;
+  --dark-yellow: #F5DD00;
   --blue: #00A3FF;
   --red: #FF3F15;
   --dark-grey: #3F3F3F;

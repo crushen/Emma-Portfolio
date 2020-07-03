@@ -36,10 +36,6 @@ export default {
     work,
     contact
   },
-  data () {
-    return {
-    }
-  },
   computed: {
     ...mapState(['page']),
     pageColour () {
