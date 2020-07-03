@@ -30,12 +30,10 @@ export default {
 }
 
 html {
-  /* background: var(--black);
-  color: var(--white);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   overflow-x: hidden;
   padding: 0;
@@ -48,5 +46,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 </style>
