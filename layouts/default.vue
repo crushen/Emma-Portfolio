@@ -23,10 +23,10 @@ export default {
 
 <style>
 :root {
-  --orange: #FFA69E;
-  --green: #B8F2E6;
-  --blue: #9ed4db;
-  --purple: #c4a5c9;
+  --yellow: #FFE600;
+  --blue: #00A3FF;
+  --red: #FF3F15;
+  --dark-grey: #3F3F3F;
 }
 
 html {
