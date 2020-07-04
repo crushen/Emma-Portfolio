@@ -18,6 +18,7 @@
 
 <style scoped>
 img {
+  width: 90vw;
   margin: 56px 0 16px;
 }
 </style>

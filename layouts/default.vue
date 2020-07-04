@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .sub-title {
-  font-size: 18px;
+  font-size: 4.8vw;
 }
 
 .page-header {

@@ -1,7 +1,7 @@
 <template>
   <section>
     <header class="page-header">
-      <h1>Contact</h1>
+      <img src="@/assets/contact.svg" alt="Text - Emma Kate Parkinson">
     </header>
   </section>
 </template>
@@ -13,3 +13,9 @@
 //   }
 // }
 </script>
+
+<style scoped>
+img {
+  width: 60vw;
+}
+</style>
