@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div id="background" :class="{'active': open}" />
     <div id="nav-container" :class="{'active': open}">
       <button
@@ -63,6 +63,11 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  position: relative;
+  z-index: 20;
+}
+
 #nav-container,
 #background {
   width: 60px;
