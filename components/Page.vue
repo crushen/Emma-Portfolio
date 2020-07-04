@@ -10,16 +10,19 @@
         <home
           v-if="page === '/'"
           key="home"
+          :page-colour="pageColour"
         />
 
         <work
           v-if="page === '/work'"
           key="work"
+          :page-colour="pageColour"
         />
 
         <contact
           v-if="page === '/contact'"
           key="contact"
+          :page-colour="pageColour"
         />
       </transition>
     </div>

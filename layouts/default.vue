@@ -58,8 +58,17 @@ h1, h2, h3, h4, h5 {
   font-family: var(--title-font);
 }
 
+p {
+  font-size: 18px;
+}
+
 .sub-title {
   font-size: 4.8vw;
+}
+
+.link {
+  color: var(--dark-grey);
+  font-weight: 700;
 }
 
 .page-header {
@@ -69,5 +78,23 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main-content {
+  margin-left: 50px;
+}
+
+.main-section {
+  width: 90%;
+  margin-top: 80px;
+}
+
+.main-section .inner {
+  width: 90%;
+  margin: auto;
+}
+
+.main-section .inner p:not(:first-of-type) {
+  margin-top: 16px;
 }
 </style>

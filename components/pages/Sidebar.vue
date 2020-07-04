@@ -30,7 +30,7 @@ export default {
   },
   data () {
     return {
-      height: 100
+      height: 160
     }
   },
   computed: {
