@@ -28,6 +28,8 @@ export default {
 
   --title-font: 'Bungee', serif;
   --main-font: 'Bitter', cursive;
+
+  --header-height: 50vh;
 }
 
 html {
@@ -56,7 +58,16 @@ h1, h2, h3, h4, h5 {
   font-family: var(--title-font);
 }
 
+.sub-title {
+  font-size: 18px;
+}
+
 .page-header {
   padding: 16px;
+  height: var(--header-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

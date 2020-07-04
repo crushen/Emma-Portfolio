@@ -71,7 +71,7 @@ export default {
 }
 
 .line {
-  height: 16px;
+  height: 12px;
   width: 100%;
   margin-top: 16px;
   transform: translate(-10px, -10px) rotate(-30deg);
