@@ -1,7 +1,10 @@
 <template>
   <section class="pages">
-    <!-- <header-background :page-colour="pageColour" /> -->
-    <sidebar :page="page" />
+    <header-background :page-colour="pageColour" />
+    <sidebar
+      :page="page"
+      :page-colour="pageColour"
+    />
     <div class="page">
       <transition name="slide" mode="out-in">
         <home
@@ -25,7 +28,7 @@
 
 <script>
 import { mapState } from 'vuex'
-// import headerBackground from '@/components/pages/HeaderBackground'
+import headerBackground from '@/components/pages/HeaderBackground'
 import sidebar from '@/components/pages/Sidebar'
 import home from '@/components/pages/Home'
 import work from '@/components/pages/Work'
@@ -33,7 +36,7 @@ import contact from '@/components/pages/Contact'
 
 export default {
   components: {
-    // headerBackground,
+    headerBackground,
     sidebar,
     home,
     work,

@@ -1,10 +1,20 @@
 <template>
-  <div class="container">
-    <div id="bar">
-      <div class="inner">
+  <div
+    :style="{ height: `${height}vh` }"
+    class="container"
+  >
+    <div
+      id="bar"
+      :style="{ border: `8px solid ${pageColour}`, height: `${height}vh` }"
+    >
+      <div
+        :style="{ transform: translate, height: `${height * 3}vh` }"
+        class="inner"
+      >
         <div
-          v-for="i in 100"
+          v-for="i in 200"
           :key="i"
+          :style="{ backgroundColor: pageColour }"
           class="line"
         />
       </div>
@@ -15,29 +25,45 @@
 <script>
 export default {
   props: {
-    page: { required: true, type: String }
+    page: { required: true, type: String },
+    pageColour: { required: true, type: String }
+  },
+  data () {
+    return {
+      height: 100
+    }
+  },
+  computed: {
+    translate () {
+      switch (this.page) {
+        case '/work':
+          return `translateY(-${this.height}vh)`
+        case '/contact':
+          return `translateY(-${this.height * 2}vh)`
+        default:
+          return 'translateY(0)'
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
 .container {
+  overflow: hidden;
   position: absolute;
-  top: 0;
+  top: 49vh;
   left: 0;
 }
 
 #bar {
   width: 50px;
-  height: 600px;
-  border: 8px solid green;
   overflow: hidden;
+  transition: border 0.3s;
 }
 
 .inner {
-  height: 600px * 3;
   width: 60px;
-  transform: translateX(-600px * 2);
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -47,9 +73,8 @@ export default {
 .line {
   height: 16px;
   width: 100%;
-  background: green;
-  /* position: absolute; */
   margin-top: 16px;
   transform: translate(-10px, -10px) rotate(-30deg);
+  transition: background-color 0.3s;
 }
 </style>
