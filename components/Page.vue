@@ -1,37 +1,40 @@
 <template>
   <section class="pages">
+    <!-- <header-background :page-colour="pageColour" /> -->
+    <sidebar :page="page" />
     <div class="page">
-      <!-- <transition name="slide" mode="out-in"> -->
-      <home
-        v-if="page === '/'"
-        key="home"
-        :page-colour="pageColour"
-      />
+      <transition name="slide" mode="out-in">
+        <home
+          v-if="page === '/'"
+          key="home"
+        />
 
-      <work
-        v-if="page === '/work'"
-        key="work"
-        :page-colour="pageColour"
-      />
+        <work
+          v-if="page === '/work'"
+          key="work"
+        />
 
-      <contact
-        v-if="page === '/contact'"
-        key="contact"
-        :page-colour="pageColour"
-      />
-      <!-- </transition> -->
+        <contact
+          v-if="page === '/contact'"
+          key="contact"
+        />
+      </transition>
     </div>
   </section>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+// import headerBackground from '@/components/pages/HeaderBackground'
+import sidebar from '@/components/pages/Sidebar'
 import home from '@/components/pages/Home'
 import work from '@/components/pages/Work'
 import contact from '@/components/pages/Contact'
 
 export default {
   components: {
+    // headerBackground,
+    sidebar,
     home,
     work,
     contact
@@ -55,6 +58,8 @@ export default {
 <style scoped>
 .page {
   transition: 0.6s;
+  position: relative;
+  z-index: 10;
 }
 
 .slide-enter,
