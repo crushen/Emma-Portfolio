@@ -1,15 +1,19 @@
 // import projects from '../static/projects.json';
 
 export const state = () => ({
-  page: 'index',
-  pageHeight: 0
+  page: {
+    name: 'index',
+    height: 0
+  }
+  // page: 'index',
+  // pageHeight: 0
 })
 
 export const mutations = {
   updatePage (state, pageName) {
-    state.page = pageName
+    state.page.name = pageName
   },
   updateHeight (state) {
-    state.pageHeight = document.querySelector('body').clientHeight
+    state.page.height = document.querySelector('body').clientHeight
   }
 }

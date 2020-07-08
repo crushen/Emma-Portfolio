@@ -49,7 +49,7 @@ export default {
   computed: {
     ...mapState(['page']),
     pageColour () {
-      switch (this.page) {
+      switch (this.page.name) {
         case '/work':
           return '#00A3FF'
         case '/contact':
