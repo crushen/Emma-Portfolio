@@ -3,13 +3,12 @@
     <div id="background" :class="{'active': open}" />
     <div id="nav-container" :class="{'active': open}">
       <button
-        :style="{color: pageColour}"
         :class="{'active': open}"
         @click="open = !open"
       >
-        <div class="line" :style="{background: pageColour}" />
-        <div class="line" :style="{background: pageColour}" />
-        <div class="line" :style="{background: pageColour}" />
+        <div class="line" :style="{background: page.colour}" />
+        <div class="line" :style="{background: page.colour}" />
+        <div class="line" :style="{background: page.colour}" />
       </button>
 
       <nav :class="{'active': open}">
@@ -47,17 +46,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['page']),
-    pageColour () {
-      switch (this.page.name) {
-        case '/work':
-          return '#00A3FF'
-        case '/contact':
-          return '#FF3F15'
-        default:
-          return '#F5DD00'
-      }
-    }
+    ...mapState(['page'])
   }
 }
 </script>

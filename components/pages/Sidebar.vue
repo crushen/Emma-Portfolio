@@ -1,20 +1,20 @@
 <template>
   <div
-    :style="{ height: `${pageHeight}px` }"
+    :style="{ height: `${page.height}px` }"
     class="container"
   >
     <div
       id="bar"
-      :style="{ border: `8px solid ${pageColour}`, height: `${pageHeight}px` }"
+      :style="{ border: `8px solid ${page.colour}`, height: `${page.height}px` }"
     >
       <div
-        :style="{ transform: translate, height: `${pageHeight * 3}px` }"
+        :style="{ transform: translate, height: `${page.height * 3}px` }"
         class="inner"
       >
         <div
           v-for="i in 200"
           :key="i"
-          :style="{ backgroundColor: pageColour }"
+          :style="{ backgroundColor: page.colour }"
           class="line"
         />
       </div>
@@ -25,17 +25,15 @@
 <script>
 export default {
   props: {
-    page: { required: true, type: String },
-    pageColour: { required: true, type: String },
-    pageHeight: { required: true, type: Number }
+    page: { required: true, type: Object }
   },
   computed: {
     translate () {
-      switch (this.page) {
+      switch (this.page.name) {
         case '/work':
-          return `translateY(-${this.pageHeight}px)`
+          return `translateY(-${this.page.height}px)`
         case '/contact':
-          return `translateY(-${this.pageHeight * 2}px)`
+          return `translateY(-${this.page.height * 2}px)`
         default:
           return 'translateY(0)'
       }

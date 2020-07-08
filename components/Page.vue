@@ -1,11 +1,7 @@
 <template>
   <section class="pages">
-    <header-background :page-colour="pageColour" />
-    <sidebar
-      :page="page.name"
-      :page-height="page.height"
-      :page-colour="pageColour"
-    />
+    <header-background :page-colour="page.colour" />
+    <sidebar :page="page" />
     <div class="page">
       <transition name="slide" mode="out-in">
         <home
@@ -44,17 +40,7 @@ export default {
     contact
   },
   computed: {
-    ...mapState(['page']),
-    pageColour () {
-      switch (this.page.name) {
-        case '/work':
-          return '#00A3FF'
-        case '/contact':
-          return '#FF3F15'
-        default:
-          return '#FFE600'
-      }
-    }
+    ...mapState(['page'])
   }
 }
 </script>
