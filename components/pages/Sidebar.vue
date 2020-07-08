@@ -5,7 +5,10 @@
   >
     <div
       id="bar"
-      :style="{ border: `8px solid ${page.colour}`, height: `${page.height}px` }"
+      :style="{
+        borderRight: `8px solid ${page.colour}`,
+        height: `${page.height}px`
+      }"
     >
       <div
         :style="{ transform: translate, height: `${page.height * 3}px` }"
@@ -57,7 +60,7 @@ export default {
 }
 
 #bar {
-  width: 50px;
+  width: 35px;
   overflow: hidden;
   transition: border 0.3s;
 }
@@ -71,7 +74,7 @@ export default {
 }
 
 .line {
-  height: 12px;
+  height: 8px;
   width: 100%;
   margin-top: 16px;
   transform: translate(-10px, -10px) rotate(-30deg);
