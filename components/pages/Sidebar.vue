@@ -1,14 +1,14 @@
 <template>
   <div
-    :style="{ height: `${height}vh` }"
+    :style="{ height: `${height}px` }"
     class="container"
   >
     <div
       id="bar"
-      :style="{ border: `8px solid ${pageColour}`, height: `${height}vh` }"
+      :style="{ border: `8px solid ${pageColour}`, height: `${height}px` }"
     >
       <div
-        :style="{ transform: translate, height: `${height * 3}vh` }"
+        :style="{ transform: translate, height: `${height * 3}px` }"
         class="inner"
       >
         <div
@@ -30,20 +30,32 @@ export default {
   },
   data () {
     return {
-      height: 160
+      // height: null
     }
   },
   computed: {
+    height () {
+      return this.$store.state.pageHeight
+    },
     translate () {
       switch (this.page) {
         case '/work':
-          return `translateY(-${this.height}vh)`
+          return `translateY(-${this.height}px)`
         case '/contact':
-          return `translateY(-${this.height * 2}vh)`
+          return `translateY(-${this.height * 2}px)`
         default:
           return 'translateY(0)'
       }
     }
+  },
+  mounted () {
+    // const height = document.querySelector('body').clientHeight
+    // this.height = document.querySelector('body').clientHeight
+    this.$store.commit('updateHeight')
+    window.addEventListener('resize', () => {
+      // this.height = document.querySelector('body').clientHeight
+      this.$store.commit('updateHeight')
+    })
   }
 }
 </script>
@@ -52,7 +64,7 @@ export default {
 .container {
   overflow: hidden;
   position: absolute;
-  top: 49vh;
+  top: 0;
   left: 0;
 }
 
@@ -64,7 +76,7 @@ export default {
 
 .inner {
   width: 60px;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-wrap: wrap;
   transition: 1.5s;

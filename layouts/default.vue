@@ -89,6 +89,10 @@ p {
   margin-top: 80px;
 }
 
+.main-section:last-of-type {
+  margin: 80px 0;
+}
+
 .main-section .inner {
   width: 90%;
   margin: auto;
