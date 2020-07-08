@@ -1,14 +1,14 @@
 <template>
   <div
-    :style="{ height: `${height}px` }"
+    :style="{ height: `${pageHeight}px` }"
     class="container"
   >
     <div
       id="bar"
-      :style="{ border: `8px solid ${pageColour}`, height: `${height}px` }"
+      :style="{ border: `8px solid ${pageColour}`, height: `${pageHeight}px` }"
     >
       <div
-        :style="{ transform: translate, height: `${height * 3}px` }"
+        :style="{ transform: translate, height: `${pageHeight * 3}px` }"
         class="inner"
       >
         <div
@@ -23,37 +23,29 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   props: {
     page: { required: true, type: String },
     pageColour: { required: true, type: String }
   },
-  data () {
-    return {
-      // height: null
-    }
-  },
   computed: {
-    height () {
-      return this.$store.state.pageHeight
-    },
+    ...mapState(['pageHeight']),
     translate () {
       switch (this.page) {
         case '/work':
-          return `translateY(-${this.height}px)`
+          return `translateY(-${this.pageHeight}px)`
         case '/contact':
-          return `translateY(-${this.height * 2}px)`
+          return `translateY(-${this.pageHeight * 2}px)`
         default:
           return 'translateY(0)'
       }
     }
   },
   mounted () {
-    // const height = document.querySelector('body').clientHeight
-    // this.height = document.querySelector('body').clientHeight
     this.$store.commit('updateHeight')
     window.addEventListener('resize', () => {
-      // this.height = document.querySelector('body').clientHeight
       this.$store.commit('updateHeight')
     })
   }
