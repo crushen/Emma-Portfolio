@@ -2,7 +2,7 @@
 
 export const state = () => ({
   page: 'index',
-  pageHeight: null
+  pageHeight: 0
 })
 
 export const mutations = {
