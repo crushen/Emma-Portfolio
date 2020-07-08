@@ -23,15 +23,13 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-
 export default {
   props: {
     page: { required: true, type: String },
-    pageColour: { required: true, type: String }
+    pageColour: { required: true, type: String },
+    pageHeight: { required: true, type: Number }
   },
   computed: {
-    ...mapState(['pageHeight']),
     translate () {
       switch (this.page) {
         case '/work':

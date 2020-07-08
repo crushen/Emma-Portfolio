@@ -4,25 +4,23 @@
     <sidebar
       :page="page"
       :page-colour="pageColour"
+      :page-height="pageHeight"
     />
     <div class="page">
       <transition name="slide" mode="out-in">
         <home
           v-if="page === '/'"
           key="home"
-          :page-colour="pageColour"
         />
 
         <work
           v-if="page === '/work'"
           key="work"
-          :page-colour="pageColour"
         />
 
         <contact
           v-if="page === '/contact'"
           key="contact"
-          :page-colour="pageColour"
         />
       </transition>
     </div>
@@ -46,7 +44,7 @@ export default {
     contact
   },
   computed: {
-    ...mapState(['page']),
+    ...mapState(['page', 'pageHeight']),
     pageColour () {
       switch (this.page) {
         case '/work':
