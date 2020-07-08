@@ -65,6 +65,14 @@
   </section>
 </template>
 
+<script>
+export default {
+  mounted () {
+    this.$store.commit('updateHeight')
+  }
+}
+</script>
+
 <style scoped>
 img {
   width: 90vw;
