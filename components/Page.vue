@@ -54,7 +54,7 @@ export default {
 
 .slide-enter,
 .slide-leave-to {
-  transform: translateX(20px);
+  transform: translateY(-20px);
   opacity: 0;
 }
 

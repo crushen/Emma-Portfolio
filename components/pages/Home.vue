@@ -3,7 +3,9 @@
     <header class="page-header">
       <!-- <h1>Emma Kate Parkinson</h1> -->
       <img src="@/assets/name.svg" alt="Text - Emma Kate Parkinson">
-      <h2 class="sub-title">Digital Designer and Creative</h2>
+      <h2 class="sub-title">
+        Digital Designer and Creative
+      </h2>
     </header>
 
     <main class="main-content">
