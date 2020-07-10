@@ -2,7 +2,7 @@
   <div class="wrapper" :style="{ top: `${page.height - 80}px` }">
     <div id="background" />
     <div id="button-container">
-      <button @click="open = !open">
+      <button @click="scrollTop">
         <div class="arrow-up" :style="{borderBottom: `16px solid ${page.colour}` }" />
       </button>
     </div>
@@ -20,6 +20,11 @@ export default {
   },
   computed: {
     ...mapState(['page'])
+  },
+  methods: {
+    scrollTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
   }
 }
 </script>
