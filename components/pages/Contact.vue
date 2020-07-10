@@ -63,7 +63,7 @@ img {
 }
 
 .main-section {
-  border-bottom: 6px solid var(--red);
+  border-bottom: 8px solid var(--red);
 }
 
 .link {

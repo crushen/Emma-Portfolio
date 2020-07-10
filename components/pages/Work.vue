@@ -78,7 +78,7 @@ img {
 }
 
 .title {
-  border-bottom: 6px solid var(--blue);
+  border-bottom: 8px solid var(--blue);
   padding-left: 5%;
 }
 

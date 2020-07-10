@@ -80,6 +80,6 @@ img {
 }
 
 .main-section {
-  border-bottom: 6px solid var(--yellow);
+  border-bottom: 8px solid var(--yellow);
 }
 </style>

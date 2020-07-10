@@ -5,10 +5,7 @@
   >
     <div
       id="bar"
-      :style="{
-        borderRight: `8px solid ${page.colour}`,
-        height: `${page.height}px`
-      }"
+      :style="{ borderRight: `8px solid ${page.colour}`, height: `${page.height}px` }"
     >
       <div
         :style="{ transform: translate, height: `${page.height * 3}px` }"
