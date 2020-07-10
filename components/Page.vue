@@ -2,6 +2,7 @@
   <section class="pages">
     <header-background :page-colour="page.colour" />
     <sidebar :page="page" />
+    <scroll-button />
     <div class="page">
       <transition name="slide" mode="out-in">
         <home
@@ -30,6 +31,7 @@ import sidebar from '@/components/Sidebar'
 import home from '@/components/pages/Home'
 import work from '@/components/pages/Work'
 import contact from '@/components/pages/Contact'
+import scrollButton from '@/components/ScrollButton'
 
 export default {
   components: {
@@ -37,7 +39,8 @@ export default {
     sidebar,
     home,
     work,
-    contact
+    contact,
+    scrollButton
   },
   computed: {
     ...mapState(['page'])

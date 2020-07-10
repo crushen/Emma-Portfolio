@@ -90,7 +90,7 @@ p, a {
 }
 
 .main-section:last-of-type {
-  margin: 80px 0;
+  margin: 80px 0 140px 0;
 }
 
 .main-section .inner {
