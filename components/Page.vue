@@ -25,8 +25,8 @@
 
 <script>
 import { mapState } from 'vuex'
-import headerBackground from '@/components/pages/HeaderBackground'
-import sidebar from '@/components/pages/Sidebar'
+import headerBackground from '@/components/HeaderBackground'
+import sidebar from '@/components/Sidebar'
 import home from '@/components/pages/Home'
 import work from '@/components/pages/Work'
 import contact from '@/components/pages/Contact'
