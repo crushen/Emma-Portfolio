@@ -36,8 +36,8 @@ export default {
 nav {
   position: fixed;
   z-index: 20;
-  top: 16px;
-  left: 32px;
+  top: 24px;
+  left: 24px;
 }
 
 .nav-list {
@@ -45,8 +45,8 @@ nav {
 }
 
 li a {
-  margin: 0 10px;
-  opacity: 0.7;
+  margin: 0 12px;
+  opacity: 0.6;
 }
 
 li a:hover {

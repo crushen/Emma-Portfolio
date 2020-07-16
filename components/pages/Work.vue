@@ -91,8 +91,8 @@ h2 {
 }
 
 @media screen and (min-width: 1100px) {
-h2 {
-  width: 82%;
-}
+  h2 {
+    width: 82%;
+  }
 }
 </style>
