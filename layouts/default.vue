@@ -1,18 +1,21 @@
 <template>
   <div>
-    <app-nav />
+    <mobile-nav id="mobile-nav" />
+    <desktop-nav id="desktop-nav" />
     <page />
     <nuxt />
   </div>
 </template>
 
 <script>
-import appNav from '@/components/nav/Nav'
+import MobileNav from '@/components/nav/MobileNav'
+import DesktopNav from '@/components/nav/DesktopNav'
 import page from '@/components/Page'
 
 export default {
   components: {
-    appNav,
+    MobileNav,
+    DesktopNav,
     page
   }
 }
@@ -60,6 +63,22 @@ h1, h2, h3, h4, h5 {
 
 p, a {
   font-size: 18px;
+}
+
+#mobile-nav {
+  display: block;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s;
 }
 
 .sub-title {
@@ -120,6 +139,16 @@ p, a {
   .main-section .inner {
     width: 82%;
     max-width: 520px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #mobile-nav {
+    display: none;
+  }
+
+  #desktop-nav {
+    display: block;
   }
 }
 </style>

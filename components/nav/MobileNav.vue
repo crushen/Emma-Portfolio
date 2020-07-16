@@ -12,7 +12,7 @@
       </button>
 
       <nav :class="{'active': open}">
-        <ul>
+        <ul class="nav-list">
           <li @click="open = false">
             <nuxt-link to="/" exact>
               Home
@@ -136,14 +136,6 @@ nav.active {
 li {
   margin: 16px 0;
   text-align: center;
-}
-
-li a {
-  text-decoration: none;
-  color: var(--dark-grey);
-  font-size: 18px;
-  font-weight: 700;
-  transition: 0.2s;
 }
 
 li:first-of-type a:hover {
