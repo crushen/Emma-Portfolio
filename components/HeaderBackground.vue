@@ -78,4 +78,11 @@ img.contact {
   width: 60vw;
   max-width: 400px;
 }
+
+@media screen and (min-width: 1100px) {
+  header {
+    width: 45%;
+    position: fixed;
+  }
+}
 </style>

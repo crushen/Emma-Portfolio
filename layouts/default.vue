@@ -111,6 +111,10 @@ p, a {
   align-items: center;
 }
 
+.page-header-space {
+  height: var(--header-height);
+}
+
 .main-content {
   margin-left: 35px;
 }
@@ -155,12 +159,20 @@ p, a {
 }
 
 @media screen and (min-width: 1100px) {
+  :root {
+    --header-height: 100vh;
+  }
+
   #mobile-nav {
     display: none;
   }
 
   #desktop-nav {
     display: block;
+  }
+
+  .page-header-space {
+    display: none;
   }
 }
 </style>

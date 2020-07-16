@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 nav {
-  position: absolute;
+  position: fixed;
   z-index: 20;
   top: 16px;
   left: 32px;

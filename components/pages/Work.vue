@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="page-header" />
+    <div class="page-header-space" />
 
     <main class="main-content">
       <section class="main-section">
