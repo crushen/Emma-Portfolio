@@ -101,4 +101,25 @@ p, a {
 .main-section .inner p:not(:first-of-type) {
   margin-top: 16px;
 }
+
+@media screen and (min-width: 670px) {
+  .sub-title {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .main-section {
+    width: 87%;
+    margin-top: 100px;
+  }
+
+  .main-section:last-of-type {
+    margin: 100px 0 180px 0;
+  }
+
+  .main-section .inner {
+    width: 82%;
+    max-width: 520px;
+  }
+}
 </style>

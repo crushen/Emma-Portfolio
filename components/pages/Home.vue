@@ -78,6 +78,7 @@ export default {
 <style scoped>
 img {
   width: 90vw;
+  max-width: 600px;
   margin: 56px 0 16px;
 }
 

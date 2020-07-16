@@ -60,6 +60,7 @@ export default {
 <style scoped>
 img {
   width: 60vw;
+  max-width: 400px;
 }
 
 .main-section {

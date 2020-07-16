@@ -74,12 +74,18 @@ export default {
 <style scoped>
 img {
   width: 90vw;
+  max-width: 600px;
   margin: 56px 0 16px;
 }
 
 .title {
   border-bottom: 8px solid var(--blue);
-  padding-left: 5%;
+}
+
+h2 {
+  width: 90%;
+  max-width: 520px;
+  margin: auto;
 }
 
 .main-section .inner {
