@@ -174,5 +174,13 @@ p, a {
   .page-header-space {
     display: none;
   }
+
+  .main-content {
+    margin-left: calc(45vw + 35px);
+  }
+
+  .main-section {
+    width: 90%;
+  }
 }
 </style>

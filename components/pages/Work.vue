@@ -89,4 +89,10 @@ h2 {
   display: block;
   margin-top: 16px;
 }
+
+@media screen and (min-width: 1100px) {
+h2 {
+  width: 82%;
+}
+}
 </style>

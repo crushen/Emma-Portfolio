@@ -50,6 +50,7 @@ export default {
 
 <style scoped>
 .page {
+  min-height: 100vh;
   transition: 0.6s;
   position: relative;
   z-index: 10;
