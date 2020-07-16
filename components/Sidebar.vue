@@ -12,7 +12,7 @@
         class="inner"
       >
         <div
-          v-for="i in 300"
+          v-for="i in 400"
           :key="i"
           :style="{ backgroundColor: page.colour }"
           class="line"
@@ -71,7 +71,7 @@ export default {
 }
 
 .line {
-  height: 6px;
+  height: 4px;
   width: 100%;
   margin-top: 8px;
   transform: translate(-10px, -10px) rotate(-30deg);
