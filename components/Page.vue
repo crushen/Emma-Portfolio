@@ -55,4 +55,10 @@ export default {
   position: relative;
   z-index: 10;
 }
+
+@media screen and (min-width: 1100px) {
+  .page {
+    padding: 150px 0 100px 0;
+  }
+}
 </style>
