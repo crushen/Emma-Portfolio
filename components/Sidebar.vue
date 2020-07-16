@@ -12,7 +12,7 @@
         class="inner"
       >
         <div
-          v-for="i in 200"
+          v-for="i in 300"
           :key="i"
           :style="{ backgroundColor: page.colour }"
           class="line"
@@ -65,7 +65,6 @@ export default {
 
 .inner {
   width: 60px;
-  /* overflow: hidden; */
   display: flex;
   flex-wrap: wrap;
   transition: 1.5s;
@@ -74,7 +73,15 @@ export default {
 .line {
   height: 6px;
   width: 100%;
-  transform: translate(-10px, 0px) rotate(-30deg);
+  margin-top: 8px;
+  transform: translate(-10px, -10px) rotate(-30deg);
   transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    position: fixed;
+    left: 45vw;
+  }
 }
 </style>
