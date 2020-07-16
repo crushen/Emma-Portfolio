@@ -175,6 +175,10 @@ p, a {
     display: none;
   }
 
+  .sub-title {
+    font-size: 2.15vw;
+  }
+
   .main-content {
     margin-left: calc(45vw + 35px);
   }

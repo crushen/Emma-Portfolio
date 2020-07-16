@@ -62,16 +62,14 @@ header {
   transition: 0.3s;
 }
 
-img.home {
-  width: 90vw;
-  max-width: 600px;
+img {
   margin: 56px 0 16px;
 }
 
+img.home,
 img.work {
   width: 90vw;
   max-width: 600px;
-  margin: 56px 0 16px;
 }
 
 img.contact {
@@ -83,6 +81,17 @@ img.contact {
   header {
     width: 45%;
     position: fixed;
+  }
+
+  img.home,
+  img.work {
+    width: 40vw;
+    max-width: none;
+  }
+
+  img.contact {
+    width: 26vw;
+    max-width: none;
   }
 }
 </style>
