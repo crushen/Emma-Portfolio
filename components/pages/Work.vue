@@ -1,8 +1,6 @@
 <template>
   <section>
-    <header class="page-header">
-      <img src="@/assets/recent-work.svg" alt="Text - Emma Kate Parkinson">
-    </header>
+    <div class="page-header" />
 
     <main class="main-content">
       <section class="main-section">
@@ -72,12 +70,6 @@ export default {
 </script>
 
 <style scoped>
-img {
-  width: 90vw;
-  max-width: 600px;
-  margin: 56px 0 16px;
-}
-
 .title {
   border-bottom: 8px solid var(--blue);
 }

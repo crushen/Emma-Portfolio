@@ -1,6 +1,6 @@
 <template>
   <section class="pages">
-    <header-background :page-colour="page.colour" />
+    <header-background :page="page" />
     <sidebar :page="page" />
     <scroll-button />
     <div class="page">
@@ -53,17 +53,5 @@ export default {
   transition: 0.6s;
   position: relative;
   z-index: 10;
-}
-
-.slide-enter,
-.slide-leave-to {
-  transform: translateY(-20px);
-  opacity: 0;
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: 0.7s;
-  transition-timing-function: cubic-bezier(0,1.15,1,.99);
 }
 </style>

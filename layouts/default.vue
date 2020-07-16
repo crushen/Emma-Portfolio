@@ -81,6 +81,18 @@ p, a {
   transition: 0.2s;
 }
 
+.slide-enter,
+.slide-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: 0.7s;
+  transition-timing-function: cubic-bezier(0,1.15,1,.99);
+}
+
 .sub-title {
   font-size: 4.8vw;
 }

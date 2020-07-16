@@ -1,12 +1,6 @@
 <template>
   <section>
-    <header class="page-header">
-      <!-- <h1>Emma Kate Parkinson</h1> -->
-      <img src="@/assets/name.svg" alt="Text - Emma Kate Parkinson">
-      <h2 class="sub-title">
-        Digital Designer and Creative
-      </h2>
-    </header>
+    <div class="page-header" />
 
     <main class="main-content">
       <section class="main-section">
@@ -76,12 +70,6 @@ export default {
 </script>
 
 <style scoped>
-img {
-  width: 90vw;
-  max-width: 600px;
-  margin: 56px 0 16px;
-}
-
 .main-section {
   border-bottom: 8px solid var(--yellow);
 }

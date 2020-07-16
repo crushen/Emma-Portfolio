@@ -1,8 +1,6 @@
 <template>
   <section>
-    <header class="page-header">
-      <img src="@/assets/contact.svg" alt="Text - Emma Kate Parkinson">
-    </header>
+    <div class="page-header" />
 
     <main class="main-content">
       <section class="main-section">
@@ -58,11 +56,6 @@ export default {
 </script>
 
 <style scoped>
-img {
-  width: 60vw;
-  max-width: 400px;
-}
-
 .main-section {
   border-bottom: 8px solid var(--red);
 }
