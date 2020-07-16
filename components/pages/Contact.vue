@@ -5,7 +5,7 @@
     <main class="main-content">
       <section class="main-section">
         <div class="inner">
-          <p>Great to have you here!</p>
+          <h2>Great to have you here</h2>
 
           <p>
             For work enquires or any questions please do
@@ -58,6 +58,10 @@ export default {
 <style scoped>
 .main-section {
   border-bottom: 8px solid var(--red);
+}
+
+h2 {
+  margin-bottom: 32px;
 }
 
 .link {
