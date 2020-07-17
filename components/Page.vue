@@ -2,7 +2,9 @@
   <section class="pages">
     <header-background :page="page" />
     <sidebar :page="page" />
-    <scroll-button />
+    <transition name="scroll">
+      <scroll-button v-if="page.name !== '/contact'" />
+    </transition>
     <div class="page">
       <transition name="slide" mode="out-in">
         <home
@@ -49,6 +51,15 @@ export default {
 </script>
 
 <style scoped>
+.scroll-enter,
+.scroll-leave-to {
+  opacity: 0;
+}
+
+.scroll-enter-active {
+  transition-delay: 1s;
+}
+
 .page {
   min-height: 100vh;
   transition: 0.6s;
