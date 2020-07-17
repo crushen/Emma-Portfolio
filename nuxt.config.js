@@ -1,11 +1,3 @@
-// import projects from './static/projects.json';
-
-// let dynamicRoutes = () => {
-//  return new Promise(resolve => {
-//    resolve(projects.map(item => `work/${item.slug}`))
-//  })
-// }
-
 export default {
   mode: 'universal',
   target: 'server',
@@ -37,15 +29,8 @@ export default {
       })
     }
   },
-  // generate: {
-  //   routes: dynamicRoutes
-  // },
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module'
-  ],
-  build: {
-    extend (config, ctx) {
-    }
-  }
+  ]
 }
