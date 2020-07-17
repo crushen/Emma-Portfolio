@@ -33,8 +33,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module'
   ],
-  buildDir: 'dist',
-  generate: {
-    fallback: true
-  }
+  buildDir: 'dist'
+  // generate: {
+  //   fallback: true
+  // }
 }
