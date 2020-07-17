@@ -3,7 +3,7 @@
     <header-background :page="page" />
     <sidebar :page="page" />
     <transition name="scroll">
-      <scroll-button v-if="page.name !== '/contact'" />
+      <scroll-button v-if="page.name === '/' || page.name === '/work'" />
     </transition>
     <div class="page">
       <transition name="slide" mode="out-in">
