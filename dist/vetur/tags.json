@@ -23,6 +23,18 @@
   "LazySidebar": {
     "description": "Auto imported from components/Sidebar.vue"
   },
+  "DesktopNav": {
+    "description": "Auto imported from components/nav/DesktopNav.vue"
+  },
+  "LazyDesktopNav": {
+    "description": "Auto imported from components/nav/DesktopNav.vue"
+  },
+  "MobileNav": {
+    "description": "Auto imported from components/nav/MobileNav.vue"
+  },
+  "LazyMobileNav": {
+    "description": "Auto imported from components/nav/MobileNav.vue"
+  },
   "Contact": {
     "description": "Auto imported from components/pages/Contact.vue"
   },
@@ -40,17 +52,5 @@
   },
   "LazyWork": {
     "description": "Auto imported from components/pages/Work.vue"
-  },
-  "DesktopNav": {
-    "description": "Auto imported from components/nav/DesktopNav.vue"
-  },
-  "LazyDesktopNav": {
-    "description": "Auto imported from components/nav/DesktopNav.vue"
-  },
-  "MobileNav": {
-    "description": "Auto imported from components/nav/MobileNav.vue"
-  },
-  "LazyMobileNav": {
-    "description": "Auto imported from components/nav/MobileNav.vue"
   }
 }
