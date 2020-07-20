@@ -12,6 +12,7 @@
             <a
               href="mailto:parkinson93@gmail.com"
               target="_blank"
+              rel="noreferrer noopener"
               class="link"
             >
               email me.
@@ -23,6 +24,7 @@
             <a
               href="https://twitter.com/EmmaKParky"
               target="_blank"
+              rel="noreferrer noopener"
               class="link"
             >
               Twitter
@@ -35,6 +37,7 @@
             <a
               href="https://www.instagram.com/emmakparkinsonart/"
               target="_blank"
+              rel="noreferrer noopener"
               class="link"
             >
               Instagram

@@ -9,9 +9,13 @@ export default {
       { hid: 'description', name: 'description', content: "Emma Kate Parkinson's online portfolio." }
     ],
     link: [
+      { rel: 'preconnect', href: 'https://www.emmakateparkinson.com' },
       { rel: 'icon', type: 'image/x-icon', href: '/smol.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Bungee&display=swap' }
-    ]
+    ],
+    htmlAttrs: {
+      lang: 'en'
+    }
   },
   router: {
     middleware: 'pages',

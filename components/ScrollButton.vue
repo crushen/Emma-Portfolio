@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper" :style="{ top: `${page.height - 80}px` }">
-    <div id="background" />
+    <div id="scroll-background" />
     <div id="button-container">
-      <button @click="scrollTop">
+      <button name="scroll to top" @click="scrollTop">
         <div class="arrow-up" :style="{borderBottom: `16px solid ${page.colour}` }" />
       </button>
     </div>
@@ -40,7 +40,7 @@ export default {
 }
 
 #button-container,
-#background {
+#scroll-background {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -57,7 +57,7 @@ export default {
   left: 0;
 }
 
-#background {
+#scroll-background {
   background: var(--dark-grey);
   right: 20px;
   top: 4px;

@@ -1,8 +1,9 @@
 <template>
   <div class="wrapper">
-    <div id="background" :class="{'active': open}" />
+    <div id="nav-background" :class="{'active': open}" />
     <div id="nav-container" :class="{'active': open}">
       <button
+        name="nav"
         :class="{'active': open}"
         @click="open = !open"
       >
@@ -58,7 +59,7 @@ export default {
 }
 
 #nav-container,
-#background {
+#nav-background {
   width: 60px;
   height: 60px;
   position: fixed;
@@ -77,14 +78,14 @@ export default {
   right: 16px;
 }
 
-#background {
+#nav-background {
   background: var(--dark-grey);
   top: 20px;
   right: 20px;
 }
 
 #nav-container.active,
-#background.active {
+#nav-background.active {
   width: 200px;
   height: 300px;
   transition: width 0.3s 0.3s, height 0.3s 0.6s;

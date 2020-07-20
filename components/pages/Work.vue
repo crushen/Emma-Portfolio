@@ -16,6 +16,7 @@
             href="https://www.salmo.uk/"
             class="link"
             target="_blank"
+            rel="noreferrer noopener"
           >
             salmo.uk
           </a>
@@ -34,6 +35,7 @@
             href="https://www.instagram.com/nightgardenlive/"
             class="link"
             target="_blank"
+            rel="noreferrer noopener"
           >
             In the Night Garden Live Instagram
           </a>
@@ -52,6 +54,7 @@
             href="https://www.familytickets.com/"
             class="link"
             target="_blank"
+            rel="noreferrer noopener"
           >
             familytickets.com
           </a>
@@ -85,7 +88,7 @@ h2 {
 }
 
 .link {
-  color: var(--blue);
+  color: #0066CC;
   display: block;
   margin-top: 16px;
 }

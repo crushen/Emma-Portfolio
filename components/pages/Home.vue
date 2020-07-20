@@ -10,6 +10,7 @@
             <a
               href="http://meahe.design/"
               target="_blank"
+              rel="noreferrer noopener"
               class="link"
             >
               Meahe Design.
@@ -25,6 +26,7 @@
             <a
               href="https://minorentertainment.com/"
               target="_blank"
+              rel="noreferrer noopener"
               class="link"
             >
               Minor Entertainment
