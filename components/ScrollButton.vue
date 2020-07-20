@@ -2,7 +2,11 @@
   <div class="wrapper" :style="{ top: `${page.height - 80}px` }">
     <div id="scroll-background" />
     <div id="button-container">
-      <button name="scroll to top" @click="scrollTop">
+      <button
+        aria-label="Scroll to top"
+        name="scroll to top"
+        @click="scrollTop"
+      >
         <div class="arrow-up" :style="{borderBottom: `16px solid ${page.colour}` }" />
       </button>
     </div>

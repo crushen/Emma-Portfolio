@@ -3,6 +3,7 @@
     <div id="nav-background" :class="{'active': open}" />
     <div id="nav-container" :class="{'active': open}">
       <button
+        aria-label="Open navigation menu"
         name="nav"
         :class="{'active': open}"
         @click="open = !open"
