@@ -6,23 +6,25 @@
       <section class="main-section">
         <div class="inner">
           <p>
-            Currently Lead UI/UX Designer for
+            Currently Lead Content Writer & Designer for
             <a
               href="http://meahe.design/"
               target="_blank"
               rel="noreferrer noopener"
               class="link"
             >
-              Meahe Design.
+              Meahe Design
             </a>
+            , a London-based design agency.
           </p>
         </div>
       </section>
 
       <section class="main-section">
         <div class="inner">
+          <p>I’m constantly looking for new ways to push myself as an artist.</p>
           <p>
-            I’ve worked as a Graphic Designer for
+            In the past, I worked as a Graphic Designer & Creative for
             <a
               href="https://minorentertainment.com/"
               target="_blank"
@@ -31,9 +33,9 @@
             >
               Minor Entertainment
             </a>
-            for 2 years, whilst simultaneously developing my skills as an artist.
+            for 2 years.
           </p>
-          <p><b>BA Animation (Hons)</b> helped extend my technical skills, but I’m largely self taught and constantly expanding my knowledge.</p>
+          <p>My time studying <b>BA Animation (Hons)</b> helped extend my technical skills, but I’m largely self-taught and constantly expanding my knowledge.</p>
         </div>
       </section>
 
