@@ -5,59 +5,124 @@
     <main class="main-content">
       <section class="main-section">
         <div class="title">
-          <h2>Meahe Design</h2>
+          <h2>Content Writer</h2>
         </div>
 
         <div class="inner">
-          <p>Lead UI/UX Designer.</p>
-          <p>Currently working on an web app designed to overhaul the issues within the UK’s visa system. The service will provide a way to access visa information easier and plan your future before you commit to the expensive application fees.</p>
-          <p>Prototype coming soon...</p>
-          <a
-            href="https://www.salmo.uk/"
-            class="link"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            salmo.uk
-          </a>
+          <p>
+            Whilst working for Meahe Design for the last year, I’ve written all the content for our upcoming online visa assistant,
+            <a
+              href="https://www.salmo.uk/"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Salmo.
+            </a>
+          </p>
+
+          <p>
+            Mainly I’ve been reading through all the legal documentation for
+            <a
+              href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/919609/Global_Talent_guidance.pdf"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              each visa,
+            </a>
+            then translating that into a more
+            <a
+              href="/global-talent.pdf"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              user-friendly language and format.
+            </a>
+          </p>
+
+          <p>This gave me experience in creating a consistent brand style and tone of voice.</p>
         </div>
       </section>
 
       <section class="main-section">
         <div class="title">
-          <h2>Minor Entertainment</h2>
+          <h2>Designer & Creative</h2>
         </div>
 
         <div class="inner">
-          <p>Assistant Graphic Designer & Lead Video Editor.</p>
-          <p>Created and managed online content for the popular In the Night Garden Live show. Tasks included creating a variety of social media posts and creating ad campaigns.</p>
-          <a
-            href="https://www.instagram.com/nightgardenlive/"
-            class="link"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            In the Night Garden Live Instagram
-          </a>
+          <p>
+            Whilst working for Meahe Design for the last year I have also created the illustrations and visual branding for
+            <a
+              href="https://www.salmo.uk/"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Salmo.
+            </a>
+          </p>
+
+          <p>
+            My main task has been creating from scratch a set of relatable characters which are all-inclusive, friendly but also professional. This then translated well into
+            <a
+              href="/salmo-instagram-posts.pdf"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              social posts
+            </a>
+            helping to explain the concept of Salmo.
+          </p>
+
+          <p>
+            I also had social media, Google Ad and email design experience with my time working on
+            <a
+              href="https://www.instagram.com/nightgardenlive/?hl=en"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              In the Night Garden Live.
+            </a>
+            During this time I also created their
+            <a
+              href="https://www.youtube.com/watch?v=bWupaM4Zzx0"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              2019 tour trailer.
+            </a>
+          </p>
+
+          <p>This gave me experience in creating a friendly image which communicates well with consumers.</p>
         </div>
       </section>
 
       <section class="main-section">
         <div class="title">
-          <h2>Family Tickets</h2>
+          <h2>UI/UX Designer</h2>
         </div>
 
         <div class="inner">
-          <p>Assistant Graphic Designer & Lead Video Editor.</p>
-          <p>Helped design web content for the site to help sell a variety of shows from Bing Live to Lion King. Tasks included creating engaging ad campaigns and banners for the site to encourage sales. Also created and curated trailers for social media.</p>
-          <a
-            href="https://www.familytickets.com/"
-            class="link"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            familytickets.com
-          </a>
+          <p>
+            Whilst working for Meahe Design for the last year, I have also worked alongside the project manager to create the UI/UX for
+            <a
+              href="https://www.salmo.uk/"
+              class="link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Salmo.
+            </a>
+          </p>
+
+          <p>I assisted in the visual design of the site alongside creating the flow for the user.</p>
+
+          <p>This gave me experience in working alongside other designers and creating access friendly sites.</p>
         </div>
       </section>
     </main>
@@ -89,7 +154,6 @@ h2 {
 
 .link {
   color: #0066CC;
-  display: block;
   margin-top: 16px;
 }
 
