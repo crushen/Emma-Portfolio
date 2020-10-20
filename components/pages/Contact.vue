@@ -22,27 +22,14 @@
           <p>
             Or feel free to follow me on
             <a
-              href="https://twitter.com/EmmaKParky"
+              href="https://letterboxd.com/emmakparkinson"
               target="_blank"
               rel="noreferrer noopener"
               class="link"
             >
-              Twitter
+              Letterboxd
             </a>
-            (if you’re a fan of random movie references and memes).
-          </p>
-
-          <p>
-            You can also check out my
-            <a
-              href="https://www.instagram.com/emmakparkinsonart/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="link"
-            >
-              Instagram
-            </a>
-            to get a sample of my illustration work.
+            (if you're a fan of random movie reviews and memes).
           </p>
         </div>
       </section>
