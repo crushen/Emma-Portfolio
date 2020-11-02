@@ -20,7 +20,16 @@
           </p>
 
           <p>
-            Or feel free to follow me on
+            Feel free to check out my visual portfolio on
+            <a
+              href="https://dribbble.com/emma-parkinson"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="link"
+            >
+              Dribbble
+            </a>
+            , or follow me on
             <a
               href="https://letterboxd.com/emmakparkinson"
               target="_blank"
